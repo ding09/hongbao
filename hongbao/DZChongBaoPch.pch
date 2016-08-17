@@ -1,0 +1,23 @@
+//
+//  DZChongBaoPch.pch
+//  hongbao
+//
+//  Created by li wei on 16/8/11.
+//  Copyright © 2016年 li wei. All rights reserved.
+//
+
+#ifndef DZChongBaoPch_pch
+#define DZChongBaoPch_pch
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+#import "DZCUiapplication.h"
+
+#endif /* DZChongBaoPch_pch */
+
+
+#ifdef DEBUG
+# define DLog(...) NSLog(__VA_ARGS__)
+#else
+# define DLog(...)
+#endif

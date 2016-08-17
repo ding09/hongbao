@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController storyboardIdentifier="dzchometab" id="49e-Tb-3d3" customClass="DZCTabController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NWa-QW-bv9" kind="relationship" relationship="viewControllers" id="pbA-2o-hoO"/>
+                        <segue destination="Ski-p0-bM5" kind="relationship" relationship="viewControllers" id="tfU-68-loH"/>
+                        <segue destination="yW1-vQ-HXx" kind="relationship" relationship="viewControllers" id="mSx-3L-wQm"/>
+                        <segue destination="o8T-Bg-LR4" kind="relationship" relationship="viewControllers" id="Jvr-fb-G6i"/>
+                        <segue destination="3jH-Au-vMT" kind="relationship" relationship="viewControllers" id="Qyu-S7-FQa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--DZCGameTableView-->
+        <scene sceneID="Dcy-io-sST">
+            <objects>
+                <tableViewController title="DZCGameTableView" id="BZb-q4-O20" customClass="DZCTwoTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4p4-Hc-whQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qfC-HT-gna">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qfC-HT-gna" id="fT8-hx-bN0">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BZb-q4-O20" id="mjH-2r-Nke"/>
+                            <outlet property="delegate" destination="BZb-q4-O20" id="LOQ-aH-jwV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="two" id="6Ls-cP-7MG"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WsS-nY-bm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766.39999999999998" y="-477.12"/>
+        </scene>
+        <!--DZCHomeTableView-->
+        <scene sceneID="6i5-dO-nux">
+            <objects>
+                <tableViewController title="DZCHomeTableView" id="Xmh-Lh-ka5" customClass="DZCOneTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="h6i-9Z-QZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Xmh-Lh-ka5" id="lfG-4f-NMf"/>
+                            <outlet property="delegate" destination="Xmh-Lh-ka5" id="vIt-0p-Pmx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="one" id="uLR-Qr-qHn"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KHO-GY-G90" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789" y="-1201"/>
+        </scene>
+        <!--DZCSuperiseTableView-->
+        <scene sceneID="0ek-z2-p1F">
+            <objects>
+                <tableViewController title="DZCSuperiseTableView" id="ISR-jE-j0l" customClass="DZCThreeTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GUC-lh-Oyz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dzcsupersiecell" rowHeight="100" id="nOd-0A-rdI" customClass="DZCHomeTableViewCellTwo">
+                                <rect key="frame" x="0.0" y="92" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nOd-0A-rdI" id="Tv9-Qm-ubd">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3Av-ho-a2w">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="DZCMovieImage" destination="3Av-ho-a2w" id="yXQ-u5-2zv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ISR-jE-j0l" id="DQr-3T-Ful"/>
+                            <outlet property="delegate" destination="ISR-jE-j0l" id="cev-RQ-wet"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="three" id="soJ-oQ-0Os"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oyh-TB-xiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="206"/>
+        </scene>
+        <!--DZCHongBaoTableView-->
+        <scene sceneID="QWj-Bc-FQd">
+            <objects>
+                <tableViewController title="DZCHongBaoTableView" id="3aV-eG-Id1" customClass="DZCFourTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aYJ-PP-cI9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dzchongbaocell" rowHeight="100" id="Akj-jw-ctz" customClass="DZCHomeTableViewCellTwo">
+                                <rect key="frame" x="0.0" y="92" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Akj-jw-ctz" id="JB7-kb-zuM">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="cgQ-n9-B7Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="DZCMovieImage" destination="cgQ-n9-B7Q" id="1s6-Lt-d3G"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3aV-eG-Id1" id="bXf-Ij-xx5"/>
+                            <outlet property="delegate" destination="3aV-eG-Id1" id="h5o-tS-IVP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="four" id="3RY-0E-GvB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zPb-Bg-i9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="930"/>
+        </scene>
+        <!--DZCMeTableView-->
+        <scene sceneID="SK5-Ev-kDt">
+            <objects>
+                <tableViewController title="DZCMeTableView" id="BQU-ve-Ofz" customClass="DZCFiveTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="d0t-Ot-kfU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="dzc_userinfor" id="ihg-hW-CzM">
+                                <rect key="frame" x="0.0" y="114" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ihg-hW-CzM" id="uLb-4s-RZz">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BQU-ve-Ofz" id="Hgy-mC-XRQ"/>
+                            <outlet property="delegate" destination="BQU-ve-Ofz" id="3ag-ys-hy8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="five" id="etd-Zl-iIo"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gm7-rL-Hzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770.13333333333333" y="1705.8933333333332"/>
+        </scene>
+        <!--登录-->
+        <scene sceneID="VYz-S6-B3u">
+            <objects>
+                <viewController storyboardIdentifier="dzcloginView" id="DZB-xi-4hp" customClass="DZCLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wiy-l5-zkx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号：" textAlignment="natural" minimumFontSize="17" id="I7b-WQ-o3d">
+                                <rect key="frame" x="20" y="143" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码：" textAlignment="natural" minimumFontSize="17" id="TLm-tS-0Iw">
+                                <rect key="frame" x="20" y="198" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JDw-kn-K8z">
+                                <rect key="frame" x="20" y="236" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DZCLoginAction:" destination="DZB-xi-4hp" eventType="touchUpInside" id="zws-kf-VOI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LbF-X0-oW2">
+                                <rect key="frame" x="20" y="274" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7mr-wa-pna" kind="push" id="Pm0-pq-4JC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="登录" id="dJh-bl-RmE">
+                        <barButtonItem key="rightBarButtonItem" title="取消" id="AUq-zv-tvs">
+                            <connections>
+                                <action selector="dzcCancelLogin:" destination="DZB-xi-4hp" id="VsF-GY-aDN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="dzcCountNumber" destination="I7b-WQ-o3d" id="5No-Xv-kc9"/>
+                        <outlet property="dzcPassWord" destination="TLm-tS-0Iw" id="o93-n5-cVP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zj-ch-Kvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1703" y="1641"/>
+        </scene>
+        <!--注册-->
+        <scene sceneID="v1X-Mf-mCg">
+            <objects>
+                <viewController id="7mr-wa-pna" customClass="DZCRegisterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zWo-HU-TiD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="natural" minimumFontSize="17" id="P8B-td-kgd">
+                                <rect key="frame" x="20" y="84" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" id="iOE-xb-Fve">
+                                <rect key="frame" x="20" y="122" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="再次输入密码" textAlignment="natural" minimumFontSize="17" id="5aG-ak-RwQ">
+                                <rect key="frame" x="20" y="160" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="邀请码" textAlignment="natural" minimumFontSize="17" id="A2H-Dg-h4E">
+                                <rect key="frame" x="20" y="198" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8O3-lL-KhV">
+                                <rect key="frame" x="20" y="236" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.13990442610000001" blue="0.059929177530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dzcRegisterAction:" destination="7mr-wa-pna" eventType="touchUpInside" id="EQf-O5-Jcy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="注册" id="nuK-zH-78a"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="dzcCallCode" destination="A2H-Dg-h4E" id="RZJ-z7-k7M"/>
+                        <outlet property="dzcConfirmPassWord" destination="5aG-ak-RwQ" id="oMI-wB-Omq"/>
+                        <outlet property="dzcCountNumber" destination="P8B-td-kgd" id="MeK-WS-DRJ"/>
+                        <outlet property="dzcPassWord" destination="iOE-xb-Fve" id="Jsa-5O-hoT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOJ-hN-dtd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2057" y="1641"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vz4-1l-lRb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NWa-QW-bv9" customClass="LFNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" systemItem="favorites" id="Q2s-3d-CSK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3iK-cm-1to">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xmh-Lh-ka5" kind="relationship" relationship="rootViewController" id="5re-M7-ed6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eHv-HA-cRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416.5333333333333" y="-1146.4133333333334"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mu3-Qo-TaN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ski-p0-bM5" customClass="LFNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" systemItem="bookmarks" id="rNz-qi-n35"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DF7-q5-0gy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BZb-q4-O20" kind="relationship" relationship="rootViewController" id="sWH-yf-9TU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehB-w2-7Ui" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416.5333333333333" y="-484.69333333333333"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hr9-99-Uqu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yW1-vQ-HXx" customClass="LFNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="3" systemItem="recents" id="1j6-H7-GnY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O2X-An-sg2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ISR-jE-j0l" kind="relationship" relationship="rootViewController" id="jSU-y7-2En"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="03C-XV-DXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416.5333333333333" y="198.80000000000001"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WIX-VZ-nSd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3jH-Au-vMT" customClass="LFNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="5" systemItem="more" id="pPk-h8-rAy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fp6-AT-HH8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BQU-ve-Ofz" kind="relationship" relationship="rootViewController" id="De2-c6-hpm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbN-dp-3Wh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437.33333333333331" y="1690.7466666666667"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3I0-rj-IEE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o8T-Bg-LR4" customClass="LFNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="4" systemItem="downloads" id="pfW-fv-7Ys"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VOe-W5-omr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3aV-eG-Id1" kind="relationship" relationship="rootViewController" id="dM6-J1-oCz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uyz-2b-wEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433.06666666666666" y="949.50666666666666"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JTo-Tx-rKu">
+            <objects>
+                <navigationController storyboardIdentifier="dzclogin" automaticallyAdjustsScrollViewInsets="NO" id="HzI-bQ-xct" customClass="LFNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vgc-OF-Qrt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DZB-xi-4hp" kind="relationship" relationship="rootViewController" id="JCz-fa-BIo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzo-Wc-ecK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1171" y="1641"/>
+        </scene>
+    </scenes>
+</document>
